@@ -7,10 +7,7 @@ export default function Footer() {
       heading: "Product",
       links: ["Features", "Pricing", "API", "Integrations"],
     },
-    {
-      heading: "Company",
-      links: ["About", "Blog", "Careers", "Contact"],
-    },
+    { heading: "Company", links: ["About", "Blog", "Careers", "Contact"] },
     {
       heading: "Resources",
       links: ["Documentation", "Help center", "Status", "Changelog"],
@@ -24,7 +21,6 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-slate-200">
       <div className="max-w-6xl mx-auto px-6 pt-16 pb-8">
-        {/* Top: brand + newsletter */}
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 pb-12">
           <div className="max-w-xs">
             <div className="flex items-center gap-2">
@@ -67,7 +63,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Middle: link columns */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 py-10 border-t border-slate-200">
           {linkColumns.map((column) => (
             <div key={column.heading}>
@@ -90,7 +85,6 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Bottom bar */}
         <div className="flex flex-col-reverse sm:flex-row items-center justify-between gap-4 pt-8 border-t border-slate-200">
           <p className="text-sm text-slate-500">
             © 2026 Zippy. All rights reserved.
@@ -101,21 +95,21 @@ export default function Footer() {
               aria-label="Zippy on GitHub"
               className="text-slate-400 hover:text-indigo-600 transition-colors"
             >
-              <Github className="w-4.5 h-4.5" />
+              <FaGithub className="w-[18px] h-[18px]" />
             </a>
             <a
               href="#"
               aria-label="Zippy on Twitter"
               className="text-slate-400 hover:text-indigo-600 transition-colors"
             >
-              <Twitter className="w-4.5 h-4.5" />
+              <FaTwitter className="w-[18px] h-[18px]" />
             </a>
             <a
               href="#"
               aria-label="Zippy on LinkedIn"
               className="text-slate-400 hover:text-indigo-600 transition-colors"
             >
-              <Linkedin className="w-4.5 h-4.5" />
+              <FaLinkedin className="w-[18px] h-[18px]" />
             </a>
           </div>
         </div>
