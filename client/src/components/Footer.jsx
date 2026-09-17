@@ -1,4 +1,5 @@
-import { Link2, Github, Twitter, Linkedin, ArrowRight } from "lucide-react";
+import { Link2, ArrowRight } from "lucide-react";
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   const linkColumns = [
